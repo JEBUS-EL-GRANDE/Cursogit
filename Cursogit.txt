@@ -1,0 +1,9 @@
+                                    Comandos Git
+
+Para configurar el usuario y correo en el git es con los sgte comandos:
+    git config --global user.name "NombreUsuario"
+    git config --global user.email "nombreusuario@gmail.com"
+
+Para confirmar que los valores se han establecido correctamente:
+    git config --global --list
+
