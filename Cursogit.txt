@@ -3,7 +3,37 @@
 Para configurar el usuario y correo en el git es con los sgte comandos:
     git config --global user.name "NombreUsuario"
     git config --global user.email "nombreusuario@gmail.com"
+    (si alguna vez hubo otro usuario registrado y ahora no te permite pushear ve al buscador de windows y pon)
+        administrador de credenciales y elimina el usuario antiguo de tu github, y ahora configura tu nuevo usuario
 
 Para confirmar que los valores se han establecido correctamente:
     git config --global --list
 
+Inicializa un nuevo repositorio Git en el directorio actual:
+    git init
+ 
+Agrega el archivo texto.txt a la área de preparación (staging area):
+    git add texto.txt
+    
+Guarda (commitea) los cambios de la staging area en el historial local de Git:
+    git commit -m "first commit"
+
+Renombra la rama predeterminada de master a main
+    git branch -M main
+
+Establece una conexión entre tu repositorio local y el repositorio remoto en GitHub
+    git remote add origin https://github.com/Juan/Repo1.git
+
+     para ver los remotos configurados.
+        git remote -v
+
+Sube (pushea) la rama main al remoto origin y configura la sincronización automática.
+Sube todos los commits locales de la rama main al repositorio remoto en GitHub.
+    git push -u origin main
+
+=======
+resumen una ves realizado todo eso
+    git add archivo.txt
+    git commit -m "primer commit"
+    git push origin main 
+=======
