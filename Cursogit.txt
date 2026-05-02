@@ -27,7 +27,6 @@ Establece una conexión entre tu repositorio local y el repositorio remoto en Gi
      para ver los remotos configurados.
         git remote -v
 
-Sube (pushea) la rama main al remoto origin y configura la sincronización automática.
 Sube todos los commits locales de la rama main al repositorio remoto en GitHub.
     git push -u origin main
 
@@ -37,3 +36,24 @@ resumen una ves realizado todo eso
     git commit -m "primer commit"
     git push origin main 
 =======
+
+borrar commit sin borrar otros archivos
+    git reset --soft HEAD-1
+
+esto hace lo contrario de push, lo que hace pull es descargar cambios que esten en la nube, ejemplo un usuario agrego unas lienas mas al repositoria de github, lo que hace esto es sincronizar 
+git pull origin master
+
+Bifurcaciones (branches) con este comando vere todas las ramas que hay en mi repositorio
+    git branch
+
+crear una nueva rama
+    git branch caractersticaNueva
+
+para entrar a la rama 
+    git checkout caractersticaNueva
+
+para fusionar ramas
+    git merge
+
+eliminar ramas 
+    git branch -d caractersticaNueva
