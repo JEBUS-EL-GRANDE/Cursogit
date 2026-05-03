@@ -75,3 +75,7 @@ Muestra el historial de commits en una sola línea por entrada
 
 
 pull request 
+
+
+
+para la master
