@@ -14,6 +14,8 @@ Inicializa un nuevo repositorio Git en el directorio actual:
  
 Agrega el archivo texto.txt a la área de preparación (staging area):
     git add texto.txt
+        sirve para agregar todos los archivos de uns vez
+        git add .
     
 Guarda (commitea) los cambios de la staging area en el historial local de Git:
     git commit -m "first commit"
@@ -57,3 +59,19 @@ para fusionar ramas
 
 eliminar ramas 
     git branch -d caractersticaNueva
+
+////////////////////////////////
+Muestra las diferencias (cambios) entre dos puntos específicos del tiempo, generalmente entre un commit anterior y el estado actual o entre dos commits.
+    git diff <hash>
+
+Saca un archivo del área de preparación (staging) y lo devuelve al área de trabajo,  Se usa para "deshacer" un git add
+    git restore --staged <archivo>
+
+Muestra el historial de commits en una sola línea por entrada
+    git log --oneline
+
+
+
+
+
+pull request 
