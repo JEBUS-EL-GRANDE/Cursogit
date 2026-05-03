@@ -49,10 +49,12 @@ Bifurcaciones (branches) con este comando vere todas las ramas que hay en mi rep
     git branch
 
 crear una nueva rama
-    git branch caractersticaNueva
+    git switch rama1                comando moderno
+    git branch rama1                comando antiguo
 
 para entrar a la rama 
-    git checkout caractersticaNueva
+    git switch rama1                camando moderno
+    git checkout rama2              comando antiguo
 
 para fusionar ramas
     git merge
@@ -74,8 +76,4 @@ Muestra el historial de commits en una sola línea por entrada
 
 
 
-pull request 
-
-
-
-para la master
+pull request
