@@ -49,8 +49,7 @@ Bifurcaciones (branches) con este comando vere todas las ramas que hay en mi rep
     git branch
 
 crear una nueva rama
-    git switch rama1                comando moderno
-    git branch rama1                comando antiguo
+    git branch rama1
 
 para entrar a la rama 
     git switch rama1                camando moderno
@@ -63,6 +62,9 @@ eliminar ramas
     git branch -d caractersticaNueva
 
 ////////////////////////////////
+Corta tu rama rama1, la mueve y la "pega" justo encima del último commit que hay en master. Es como si acabaras de crear la rama hoy mismo, con todos los cambios nuevos ya incluidos
+    git rebase rama1
+
 Muestra las diferencias (cambios) entre dos puntos específicos del tiempo, generalmente entre un commit anterior y el estado actual o entre dos commits.
     git diff <hash>
 
